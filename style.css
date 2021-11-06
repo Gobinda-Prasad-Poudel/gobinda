@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+
+}
+
+#header {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+}
+#home{
+    height: 100vh;
+
+}
+#main {
+    font-size: 21px;
+   margin-top: 30px;
+    width: 300px;
+    font-family: 'Merriweather', serif;
+    justify-content: center;
+    align-items: center;
+}
+#animation {
+    font-size: 50px;
+    text-align: center;
+    color: #ff3b5f;
+    padding: 50vh;
+    position: relative;
+    
+}
+
+
+#pic {
+    clip-path: circle();
+}
+ .container {
+    margin-left: 80px;
+    margin-right: 100px;
+
+    
+}
+
+
+/* --------------------Personal Info------------------ */
+#personalinfo{
+    height: 100vh;
+}
+#name{
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 1px;
+}
+
+#sideNav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background-color: #f67c92;
+    z-index: 2;
+    transition: 0.5s;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 40px 20px;
+    font-size: 24px;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: #fff;
+
+    
+}
+
+#menuBtn {
+    width: 50px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+
+}
+
+
+/*--------- Footer-------- */
+#Footer {
+    padding: 50px 0 30px;
+
+}
+.link-title{
+    margin-left: 30px;
+}
+hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #f67c92 ;
+}
+
+.container-footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+
+.footer-left-col {
+    flex-basis: 50%;
+    margin-top: 60px;
+}
+
+
+.footer-right-col {
+    flex-basis: 35%;
+    margin-top: 60px;
+}
+.footer-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link-title h5 {
+    color:#fd5b7e;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.link-title p {
+    color:rgb(82, 82, 82);
+    font-size: 20px;
+}
+
+.footer-info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.copyright-text{
+    font-size: 22px;
+}
+
+/* ---------------Social Icons--------------- */
+.socialicons {
+
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.socialicons img {
+    display: block;
+    width: 20px;
+    margin: 0 auto 30px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:770px) {
+#main{
+    font-size: 18px;
+    margin-top: 30px;
+     width: 300px;
+     font-family: 'Merriweather', serif;
+     justify-content: center;
+     align-items: center;
+}
+    
+}
+.maintext {
+    font-size: 26px;
+    padding-top: 20px;
+    padding-left: 36px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*----------------------Aim------------------------------*/
+#Aim{
+    height: 80vh;
+}
+.static-txt{
+    color: #ff1944;
+    font-size: 40px;
+    max-width: 80%;
+    min-width: 20%;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 1px;
+    color: #000;
+
+}
+
+.aim1{
+    display:flex;
+    margin-left: 80px;
+    margin-top: 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+/*-------------------Education-------------------------------*/ 
+#Education {
+    height: 80vh;
+}
+
+
+/*---------------------Contact--------------------------------------*/
+#Contact {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.message {
+    font-size: 26px;
+    color: white;
+}
+.box{
+    padding: 20px;
+    margin-left: 50vh;
+    width: 500px;
+    height: 700px;
+    background-color: #3a3838;
+}
+.box input[type = "text"] , .box input[type = "reset"] , .box input[type = "submit"] , .txtarea {
+    width: 300px;
+    border: none;
+    margin: 5px;
+    padding: 20px;
+    border: 2px solid #ff3b5f;
+    border-radius: 50px;
+    font-size: 16px;
+}
+

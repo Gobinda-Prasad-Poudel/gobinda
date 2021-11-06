@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+
+
+
+    <section id="home">
+        <div class="container">
+
+            <p id="main">Gobinda Prasad Poudel</p>
+        </div>
+        <p id="animation">
+
+        </p>
+        <p id="animation1">
+
+        </p>
+
+
+
+    </section>
+
+
+
+
+
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#personalinfo">Personal Info</a></li>
+            <li><a href="#Aim">Aim And Hobby</a></li>
+
+            <li><a href="#Contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+    <img src="menu.png" alt="MenuButton" id="menuBtn">
+
+    <!-- Personal Info -->
+    <hr>
+    <section id="personalinfo">
+        <p class="maintext">Personal Info</p>
+        <center><img src="photo logo.png" id="pic" alt=""></center>
+        <p id="name">Name = Gobinda Prasad Poudel</p>
+        <p id="name">Reading In Class Nine Of <a href="https://www.facebook.com/profile.php?id=100028926123594"
+                class="link" target="_blank">Hamro Pahunch Secondary School</a></p>
+
+
+
+    </section>
+    <hr>
+
+
+
+
+    <!-- Aim -->
+    <section id="Aim">
+        <p class="maintext">Aim And Hobby</p>
+        <div class="aim1">
+            <p class="static-txt">I want to be a web developer, software engineer and app developer</p>
+
+        </div>
+
+
+
+
+    </section>
+    <hr>
+
+
+    <!-- About -->
+    <section id="Contact">
+        <p class="maintext">Contact Us</p>
+        <form class="box" method="post">
+            <h1 class="message">Any Query Or Feed Back</h1>
+
+            <input type="text" name="" placeholder="First Name">
+            <input type="text" name="" placeholder="Second Name">
+            <input type="text" name="" placeholder="Gmail">
+            <textarea cols="76"  rows="12"class="txtarea"> </textarea>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset"> <br>
+
+
+
+
+        </form>
+
+
+
+    </section>
+
+
+    <!-- Footer -->
+    <section id="Footer">
+        <dive class="container-footer-row">
+            <hr>
+            <dive class="footer-left-col">
+                <div class="footer-links">
+                    <div class="link-title">
+                        <h5>About Us</h5>
+                        <p>Request Demo</p>
+                        <p>FAQs</p>
+                    </div>
+                    <div class="link-title">
+                        <h5>Support</h5>
+                        <p>Features Us</p>
+                        <p>Contact US</p>
+                    </div>
+                </div>
+            </dive>
+            <dive class="footer-right-col">
+
+                <div class="footer-info">
+                    <div class="copyright-text">
+                        <p>Copy Right &#169 2021 By Gobinda</p>
+                        <p>For any businesss inquiry <br>
+                            Email:overalltech400@gmail.com</p>
+                    </div>
+                    <div class="footer-logo"></div>
+                </div>
+            </dive>
+            </div>
+
+
+
+    </section>
+
+    <!-- Social Icons -->
+    <div class="socialicons">
+        <a href="https://www.facebook.com/gobinda.poudel.9279" target="_blank"><img src="facebook.png" alt=""></a>
+        <a href="https://www.instagram.com/gobinda_poudel123/" target="_blank"><img src="instagram.png" alt=""></a>
+        <a href="https://twitter.com/?lang=en" target="_blank"><img src="twitter.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/gobinda-prasad-poudel-aa9485218/" target="_blank"><img src="linkedin.png"
+                alt=""></a>
+
+    </div>
+
+
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                console.log("Menu Button Is Clicked")
+
+            }
+
+            else {
+                sideNav.style.right = "-250px";
+            }
+        }
+
+        var i = 0;
+        var txt = ' Hello Welcome To this Website . This Website Is Created By  Gobinda Prasad Poudel ';
+        var speed = 50;
+        window.onload = function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("animation").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+
+        var scroll = new SmoothScroll('a[href*="#"]');
+
+    </script>
+
+</body>
+
+</html>
