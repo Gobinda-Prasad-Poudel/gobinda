@@ -223,15 +223,12 @@ hr {
     justify-content: center;
     align-items: center;
 }
-/*-------------------Education-------------------------------*/ 
-#Education {
-    height: 80vh;
-}
+
 
 
 /*---------------------Contact--------------------------------------*/
 #Contact {
-    height: 100vh;
+    height: 110vh;
     justify-content: center;
     align-items: center;
 
@@ -245,16 +242,41 @@ hr {
     padding: 20px;
     margin-left: 50vh;
     width: 500px;
-    height: 700px;
+    height: 600px;
     background-color: #3a3838;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
-.box input[type = "text"] , .box input[type = "reset"] , .box input[type = "submit"] , .txtarea {
+.box input[type = "text"] {
     width: 300px;
     border: none;
     margin: 5px;
     padding: 20px;
     border: 2px solid #ff3b5f;
     border-radius: 50px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.box input[type = "reset"] , .box input[type = "submit"]  {
+    width: 300px;
+    border: none;
+    margin: 5px;
+    padding: 20px;
+    border: 2px solid #ff3b5f;
+    border-radius: 50px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.txtarea {
+    width: 390px;
+    height: 150px;
+    border: none;
+    margin: 5px;
+    border: 2px solid #ff3b5f;
     font-size: 16px;
 }
 
