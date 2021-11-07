@@ -52,7 +52,7 @@
 #personalinfo{
     height: 110vh;
 }
-#name{
+.name , .name1 , .name1 a{
     font-size: 32px;
     text-align: center;
     font-family: 'Merriweather', serif;
@@ -230,8 +230,8 @@ hr {
 }
 .box{
     padding: 20px;
-    margin-left: 50vh;
-    width: 500px;
+
+    width: 400px;
     height: 600px;
     align-items: center;
     text-align: center;
@@ -241,17 +241,41 @@ form input {
     width: 80%;
     padding:10px 12px;
     margin-bottom: 5px;
+    margin-left: 50px;
     outline: none;
     box-shadow: none;
     box-sizing: border-box;
     border: 2px solid #ff3b5f;
 }
+form input:focus{
+    width: 420px;
+    border: 2px solid #ad0927;
+    font-size: 16px;
+}
+textarea {
+    width: 80%;
+    height: 160px;
+    padding:10px 12px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: 2px solid #ff4c6d;
+}
+textarea:focus{
+    width: 450px;
+    border: 2px solid #90041e;
+    font-size: 16px;
+    
+}
 .box input[type = "submit"]{
-    margin-top: 40px;  
+    margin-top: 20px;  
+    
 }
 
 .box input[type = "reset"] , .box input[type = "submit"]  {
-    width: 300px;
+    width: 160px;
     border: none;
     margin-top: 20px;
     padding: 20px;
@@ -324,18 +348,27 @@ form input {
         height: 110vh;
     }
     #pic {
-        clip-path: circle(80);
+        clip-path: circle();
         width: 240px;
         height: 240px;
         padding-top: 10px;
         padding-left: 40px;
     }
-    #name{
-        margin-top: 20px;
+    .name{
+        margin-top: 220px;
+        margin-left: 40px;
         font-size: 22px;
-        text-align: center;
         font-family: 'Merriweather', serif;
         letter-spacing: 1px;
+        z-index: 2;
+    }
+    .name1 , .name1 a{
+        
+        margin-left: 40px;
+        font-size: 22px;
+        font-family: 'Merriweather', serif;
+        letter-spacing: 1px;
+        z-index: 2;
     }
     
     #sideNav {
@@ -383,8 +416,8 @@ form input {
         margin-left: 30px;
     }
     hr {
-        width: 100%;
-        border: 0;
+        width:100%;
+        border: 2px;
         border-top: 1px solid #f67c92 ;
     }
     
@@ -456,7 +489,8 @@ form input {
     
     
     .maintext {
-        font-size: 26px;
+        font-size: 22px;
+        font-weight: bold;
         padding-top: 20px;
         padding-left: 36px;
         font-family: 'Roboto', sans-serif;
@@ -510,21 +544,71 @@ form input {
     
     .message {
         font-size: 26px;
-        color: white;
+        color: #ff3b5f;
     }
-    form {
-        max-width: 300px;
-        margin: 30px 0;
+    .box{
+        padding: 20px;
+    
+        width: 400px;
+        height: 600px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
     }
     form input {
-        width: 100px;
+        width: 60%;
         padding:10px 12px;
         margin-bottom: 5px;
+        margin-left: 30px;
         outline: none;
         box-shadow: none;
         box-sizing: border-box;
         border: 2px solid #ff3b5f;
+        background-color: #fbdae0;
     }
+    form input:focus{
+        width: 320px;
+        border: 2px solid #ad0927;
+        font-size: 16px;
+        background-color: #ffffff;
+    }
+    textarea {
+        width: 60%;
+        height: 160px;
+        padding:10px 12px;
+        margin-left: 30px;
+        margin-bottom: 5px;
+        outline: none;
+        box-shadow: none;
+        box-sizing: border-box;
+        border: 2px solid #ff4c6d;
+        background-color: #ffd4dc;
+    }
+    textarea:focus{
+        width: 310px;
+        border: 2px solid #90041e;
+        font-size: 16px;
+        background-color: #ffffff;
+        
+    }
+    .box input[type = "submit"]{
+        margin-top: 20px;  
+        
+    }
+    
+    .box input[type = "reset"] , .box input[type = "submit"]  {
+        width: 120px;
+        border: none;
+        margin-top: 20px;
+        padding: 10px;
+        border: 2px solid #ff3b5f;
+        border-radius: 50px;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+   
     
         
     }
