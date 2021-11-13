@@ -218,10 +218,26 @@ hr {
 
 /*---------------------Contact--------------------------------------*/
 #Contact {
-    height: 110vh;
+    height: 120vh;
     justify-content: center;
     align-items: center;
 
+}
+
+.download{
+    text-decoration: none;
+    background-color: #ff3b5f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.download:focus{
+    
+    background-color: none;
+    color: #ff3b5f;
 }
 
 .message {
