@@ -234,11 +234,12 @@ hr {
     margin-bottom: 50px;
 }
 
-.download:focus{
-    
-    background-color: none;
+.download:hover{
+    border: 2px solid #ff3b5f;
+    background-color: #fff;
     color: #ff3b5f;
 }
+
 
 .message {
     font-size: 26px;
