@@ -1,19 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="style.css">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ram Coading">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/489c4abe26.js" crossorigin="anonymous"></script>
+  <title>Gobinda Coading Website For Coading And Quote Enthusiastic</title>
 </head>
+
 <body>
-    <p id="main">Gobinda Prasad Poudel</p>
-    <div class="construction">
-        <img src="Construction.png" alt="Construction">
+
+
+
+  <!--  Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #61f28f;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Gobinda</a>
+      <a class="navbar-brand" href="/index.html"><i class="fas fa-home"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html" target="_blank">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/quotes.html" target="_blank">Quotes</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/makeSimpleWeb.html" target="_blank">Make Simple Website Using
+                  Bootstarp</a></li>
+              <li><a class="dropdown-item" href="/getMethod.html" target="_blank">Get Some Methods Of Coading</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html" target="_blank">About</a>
+          </li>
+        </ul>
+
+        <!-- <button class="btn btn-outline-danger mx-4" type="submit">Login</button>
+                    <button class="btn btn-outline-danger" type="submit">Sin In</button> -->
+
+      </div>
     </div>
-   <p class="txt">This Website Is Under <a href="construction.html" target="_blank">Construction.</a><br>
-Visit Again</p> 
-    
+  </nav>
+
+  <!-- Image Slider -->
+  <div class="container fluid my-5">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/slider1.jfif" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Tech</h1>
+            <!-- <button class="btn btn-success">Button 1</button>
+            <button class="btn btn-danger">Button 2</button> -->
+            <p>You can built your own websites from us (Currently This facility is under construction)</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/slider5.jfif" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Tech News And Information</h1>
+            <h4 class="text-primary">You Can Get technology related news and information on daily basis</h4>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/slider3.jfif" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Quotes</h1>
+            <button class="btn btn-success"><a href="/quotes.html" style="text-decoration: none; color: #fff;"
+                target="_blank"> Read Quotes</a></button>
+            <p>You can read some quotes which can be very useful in your life</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/slider4.jfif" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Many Other Facilities</h1>
+            <p>You can get many other services from us</p>
+          </div>
+        </div>
+        < </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+    </div>
+
+
+    <!-- <div class="container fluid">
+            <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://source.unsplash.com/1400x700/?apple" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/1400x700/?technology" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/1400x700/?laptop" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/1400x700/?mobile" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/1400x700/?macbook" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/1400x700/?html,css" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/1400x700/?rgbpc" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div> -->
+
+    <!-- Quotes -->
+
+    <div class="container my-5">
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold lh-1">About this website</h1>
+          <p class="lead fw-bold" id="text"></p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+            <!-- <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> -->
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+          <img class="rounded-lg-3" src="" alt="" width="720">
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="container">
+      <p class="float-end"><a href="#" style="text-decoration: none; color: #000;">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Back to top</font>
+          </font>
+        </a></p>
+      <p>
+        <font style="vertical-align: inherit;">
+          <font id="full-year" style="vertical-align: inherit;"></font>
+          <font style="vertical-align: inherit;">· </font>
+        </font><a href="#" style="text-decoration: none; color: #000;">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;"><a href="#" style="text-decoration: none; color: #000;"> Privacy
+                Policy</a></font>
+          </font>
+        </a>
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;"> · </font>
+        </font><a href="#">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;"><a href="#" style="text-decoration: none; color: #000;"> Terms of
+                Use</a></font>
+          </font>
+        </a>
+      </p>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        -->
+
+    <script src="script.js"></script>
 </body>
+
 </html>
